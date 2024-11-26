@@ -1,23 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import "./style.css";
+import ProductCard from './components/product_card/product_card';
+import ProductCardLine from './components/product_card/product_card_line/product_card_line';
 
 function App() {
+  const prods = [
+    {
+      imgSrc: logo,
+      imgAlt: "alternate name",
+      name: "antique",
+      cost: Math.ceil(Math.random() * 99)
+    },
+    {
+      imgSrc: logo,
+      imgAlt: "alternate name",
+      name: "antique",
+      cost: Math.ceil(Math.random() * 99)
+    },
+    {
+      imgSrc: logo,
+      imgAlt: "alternate name",
+      name: "antique",
+      cost: Math.ceil(Math.random() * 99)
+    },
+    {
+      imgSrc: logo,
+      imgAlt: "alternate name",
+      name: "antique",
+      cost: Math.ceil(Math.random() * 99)
+    },
+    {
+      imgSrc: logo,
+      imgAlt: "alternate name",
+      name: "antique",
+      cost: Math.ceil(Math.random() * 99)
+    },
+
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello, World!</h1>
+      {/* <ProductCard imgSrc={logo} imgAlt={"Old Drawer"} name={"Antique Drawer"} cost={"$14.56"} /> */}
+      <ProductCardLine products={prods} />
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.product-card-line {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: orchid;
+    border-radius: 0.6rem;
+    margin: 0.5rem 1rem;
+    row-gap: 1.2rem;
+    column-gap: 1.1rem;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.product-card {
+    background-color: goldenrod;
+    .prod-card-image {
+        width: 70px;
+    }
+}
